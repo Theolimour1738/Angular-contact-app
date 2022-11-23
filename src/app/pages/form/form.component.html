@@ -1,0 +1,41 @@
+<h1 mat-dialog-title>Add Contact </h1>
+<div mat-dialog-content>
+    <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Your name" formControlName="firstName">
+            
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Surname</mat-label>
+            <input matInput placeholder="Your surname" formControlName="lastName">                      
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Email Address</mat-label>
+            <input matInput placeholder="Your email address" formControlName="email">            
+          </mat-form-field>
+
+
+          <mat-form-field appearance="fill">
+            <mat-label>Address</mat-label>
+            <input matInput  placeholder="Your phoneNumber" formControlName="address" >           
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>cellNumber</mat-label>
+            <input matInput placeholder="Your phoneNumber" formControlName="cellNumber">
+            
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>biography</mat-label>
+            <textarea matInput placeholder="Your biography" formControlName="bio"></textarea>
+          </mat-form-field>
+          <div  mat-dialog-actions [align]="'end'">
+            <button mat-raised-button color="warn" mat-dialog-close="">Close</button>
+            <button mat-raised-button color="primary" type="submit">Register</button>
+          </div>
+       
+      </form>    
+</div>
+

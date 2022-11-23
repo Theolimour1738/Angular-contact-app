@@ -1,0 +1,39 @@
+
+<div class="bounds">
+
+	<div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
+		<div fxFlex="40" class="sec1" fxFlex.xs="55">
+			<div class="container p-5" >
+        <input class="form-control" type="text" placeholder="search" [(ngModel)]="searchContact" >
+        <button mat-button (click)="openDialog()">Add</button> 
+          <ul class="btn-group" style="list-style: none;">
+              <li  *ngFor="let contact of contacts | search: searchContact">
+                <button [class.selected]="contact === selectedContact" type="button" (click)="onSelect(contact)">
+                  <span class="name"> {{contact.firstName}} {{contact.lastName}}</span>
+                  <span class="name"> {{contact.cellNumber}} </span>
+                  <ngx-avatar class="avatar" name="{{contact.firstName}} {{contact.lastName}}"></ngx-avatar>
+                </button>
+                
+              </li>
+            </ul>  
+		</div>
+		<div fxFlex="30" class="sec2">
+			<mat-card *ngIf="selectedContact"  class="example-card , mat-elevation-z0">
+        <mat-card-title>{{selectedContact.firstName| uppercase}} {{selectedContact.lastName| uppercase}}</mat-card-title>
+        <mat-card-content>Cellphone:</mat-card-content>
+        <mat-card-content>{{selectedContact.cellNumber | uppercase}} </mat-card-content>
+        <mat-card-content>Email:</mat-card-content>
+        <mat-card-content>{{selectedContact.email | uppercase}}</mat-card-content>
+        <mat-card-content>Address:</mat-card-content>
+        <mat-card-content>{{selectedContact.address | uppercase}}</mat-card-content>
+        <mat-card-content>Age:</mat-card-content>
+        <mat-card-content >{{ Age | uppercase}}</mat-card-content>
+      </mat-card>
+
+      <mat-card *ngIf="selectedContact"  class="bio-card , mat-elevation-z0">
+        <mat-card-content>{{selectedContact.bio | uppercase}}</mat-card-content>
+      </mat-card>
+		</div>
+
+	</div>
+</div>
