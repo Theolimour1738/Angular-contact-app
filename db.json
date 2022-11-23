@@ -35,50 +35,6 @@
       "address": "512 Town Way",
       "cellNumber": "0129874563",
       "bio": "Suspendisse potenti. Nulla facilisi. Cras eu tempor magna. Nunc egestas, magna sed commodo interdum, elit lacus ullamcorper massa, vitae aliquet lectus diam vitae lorem. Maecenas eu accumsan odio, et lacinia orci. Pellentesque tempor diam justo, eu dictum leo mollis id. Proin iaculis neque et libero tristique, sit amet ultricies mauris maximus. Nam id velit hendrerit, ornare mi at, imperdiet ligula. Donec iaculis, elit a consectetur sollicitudin, magna urna interdum dui, id tincidunt nisl lorem id orci."
-    },
-    {
-      "id": 5,
-      "firstName": "Theo",
-      "lastName": "Limour II",
-      "email": "theo@limoustore.co.za",
-      "address": "213 sophie du bryun",
-      "cellNumber": "0683396180",
-      "bio": "motheo is a software developer from pretoria"
-    },
-    {
-      "id": 6,
-      "firstName": "Theo",
-      "lastName": "Limour II",
-      "email": "theo@limoustore.co.za",
-      "address": "213 sophie du bryun",
-      "cellNumber": "0683396180"
-    },
-    {
-      "id": 7,
-      "firstName": "Motheo",
-      "lastName": "Malope",
-      "email": "theolimourii@gmail.com",
-      "address": "213 sophie du bryun",
-      "cellNumber": "0683396180",
-      "bio": "Full Stack developer"
-    },
-    {
-      "id": 8,
-      "firstName": "Motheo",
-      "lastName": "Limour II",
-      "email": "theo@limoustore.co.za",
-      "address": "213 sophie du bryun",
-      "cellNumber": "0683396180",
-      "bio": "Software developer"
-    },
-    {
-      "id": 9,
-      "firstName": "Motheo",
-      "lastName": "Limour II",
-      "email": "theo@limoustore.co.za",
-      "address": "213 sophie du bryun",
-      "cellNumber": "0683396180",
-      "bio": "jhtres"
     }
   ]
 }

@@ -31,7 +31,7 @@ export class FormComponent  implements OnInit {
       bio:['',[ Validators.maxLength(255), Validators.required]]
     }) 
 
-   // this.reloadPage();
+   
   }
   closeDialog(){
     this.dialog.closeAll();

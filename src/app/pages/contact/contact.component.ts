@@ -59,6 +59,6 @@ searchContact = '';
 
   onSelect(contact: any): void {
     this.selectedContact = contact;
-    this.getAge(this.selectedContact.firstName);
+    //this.getAge(this.selectedContact.firstName);
   }
 }
